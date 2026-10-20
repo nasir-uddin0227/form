@@ -10,17 +10,22 @@
             display: block;
             margin-bottom: 20px;
         }
+
+        header {
+            color: darkgreen;
+
+        }
     </style>
 </head>
 
 <body>
     <header>
-
+        <h3>Football Kit Heaven</h3>
     </header>
     <main>
         <section>
             <form>
-                <h3>Please Fill up the form</h3>
+                <h4>Please Fill up the form</h4>
                 <label for="name">Enter Name:
                     <input type="text" id="name" placeholder="Your Name">
                 </label>
@@ -33,6 +38,43 @@
                 <label for="phone">Contact No.:
                     <input type="tel" id="phone" placeholder="Your Phone Number">
                 </label>
+                <fieldset>
+                    <legend>Chest Size</legend>
+                    <label for="42'">
+                        <input type="radio" name="chest size" id="42'">42
+                    </label>
+                    <label for="44'">
+                        <input type="radio" name="chest size" id="44'">44
+                    </label>
+                    <label for="46'">
+                        <input type="radio" name="chest size" id="46'">46
+                    </label>
+                    <label for="48'">
+                        <input type="radio" name="chest size" id="48'">48
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Jersey Type</legend>
+                    <label for="type">
+                        <input type="checkbox" name="type" id="home">Home
+                    </label>
+                    <label for="away">
+                        <input type="checkbox" name="type" id="away">Away
+                    </label>
+                    <label for="third">
+                        <input type="checkbox" name="type" id="third">Third
+                    </label>
+                    <label for="gk">
+                        <input type="checkbox" name="type" id="gk">GK
+                    </label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Special Instruction</legend>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
 
             </form>
         </section>
